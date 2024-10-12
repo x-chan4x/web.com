@@ -1,0 +1,174 @@
+.image{
+    position:relative;
+    border: 4px solid;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    border: none;
+    transform: translateY(10px);
+
+}
+@media screen and (max-width:600px) {
+    .image{
+        height: 90vh ;
+    }
+}
+
+.image_1{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    order:-1;
+    padding: 10px;
+    padding-right: 40px;
+   
+    
+}
+.image_2{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    padding: 10px;
+    padding-right: 40px;
+   
+    
+}
+.image_3{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    padding: 10px;
+    padding-right: 40px;
+    
+}
+.image_4{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    padding: 10px;
+    padding-right: 40px;
+    
+}
+.slide{
+   margin: 12px;
+   
+}
+.box{
+
+    text-align: center;
+    font-size: 9em;
+    width: 200px;
+    height: 200px;
+    background-color: hsl(0, 76%, 30%);
+    transform: translateX(-20px);
+   
+    animation-name: slideright;
+    animation-duration: 4s;
+}
+
+@keyframes slideright {
+     from{
+        transform: translateX(-150px);
+     }
+}
+.menubar{
+    margin: 3px;
+    background-color: black;
+    padding: 8px 15px;
+    transform: translateX(5px);
+    animation-name: slideright1;
+    animation-duration:4s ;
+  
+
+}
+.menu{
+   text-align: start;
+    color: snow;
+   
+    text-decoration: none;
+    font-size: 1.6em;
+    padding: 8px 15px;
+  
+}
+.menu:hover{
+    background-color: hsl(0, 0%, 10%);
+}
+@keyframes slideright1{
+    from{
+        transform: translateX(-590px);
+    }
+}
+@media screen and (max-width:600px) {
+    .menubar, .menu{ 
+       font-size: 1em;
+       padding: 4px 6px;
+    }
+}
+.slidedown{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    font-size: 8em;
+    text-align: center;
+    animation-name: rotate;
+    animation-duration: 5s;
+}
+@keyframes rotate{
+     
+        50%{transform:rotateZ(360deg)}
+    
+}
+.slidedown1{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: pink;
+    font-size: 8em;
+    margin: 20px;
+    animation-name: Scale;
+    animation-duration: 4s;
+}
+@keyframes Scale{
+    from{
+       
+        transform: scale(0);
+    }
+}
+.slidedown2{
+    width: 200px;
+    height: 200px;
+    background-color: hsl(160, 100%, 75%);
+    text-align: center;
+    font-size: 8em;
+    animation-name: Colorchange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes Colorchange {
+    20%{background-color: hsl(113, 79%, 40%);}
+    30%{background-color: hsl(37, 84%, 39%);}
+    40%{background-color: hsl(250, 72%, 39%);}
+    50%{background-color: hsl(0, 69%, 50%);}
+    60%{background-color: hsl(160, 92%, 24%);}
+    70%{background-color: hsl(304, 83%, 41%);}
+    80%{background-color: hsl(62, 76%, 51%);}
+    100%{background-color: hsl(226, 43%, 13%);}
+}
+.slidedown3{
+    width: 200px;
+    height: 200px;
+    background-color: snow;
+    text-align: center;
+    font-size: 8em;
+    animation-name: Shadow;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+
+}
+@keyframes Shadow {
+    100%{
+        box-shadow: 5px 5px 10px orange;
+    }
+}

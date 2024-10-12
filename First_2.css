@@ -1,0 +1,273 @@
+body {
+  background-color: rgb(60, 121, 173);
+  overflow-x: hidden;
+}
+
+#Buttons {
+  background-color: hsla(236, 100%, 71%, 0.501);
+  border: none;
+  width: 8em;
+  height: 3.5em;
+  border-radius: 50px;
+  font-family: "space mono", Times, serif;
+  font-weight: 600;
+}
+#refresh_icon {
+  color: white;
+  font-weight: 200;
+  font-size: 3em;
+  position: absolute;
+  right: 3%;
+  top: 4%;
+  border-radius: 50px;
+}
+#refresh_icon:hover {
+  box-shadow: 5px 5px 7px hsl(230, 83%, 50%), -5px -5px 7px hsl(230, 83%, 50%),
+    -5px 5px 7px hsl(230, 83%, 50%), 5px -5px 7px hsl(230, 83%, 50%);
+}
+
+section #Buttons:hover {
+  box-shadow: 5px 5px 5px hsl(221, 53%, 60%);
+}
+.welcome_container {
+  font-family: "Playwrite CU";
+  color: hsl(243, 35%, 46%);
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+#Container {
+  border-radius: 20px;
+  align-content: first baseline;
+}
+
+.Container_1 {
+  color: aqua;
+  font-family: cursive;
+  font-weight: 600;
+}
+.Container_2 {
+  background-color: aqua;
+  color: blue;
+  font-family: space mono;
+  font-weight: 700;
+}
+.Container_3 {
+  border: 3px solid orangered;
+  border-top: 3px dotted violet;
+  color: blueviolet;
+  font-family: SUSE;
+  font-weight: 800;
+}
+.Container_4 {
+  color: tomato;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 400;
+}
+.Container_5 {
+  color: rgb(255, 0, 85);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+}
+.Icon {
+  position: fixed;
+  right: 10px;
+  left: 720px;
+  top: 750px;
+  bottom: 0;
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+.shadow {
+  text-shadow: 6px 6px 5px hsl(242, 44%, 50%);
+  color: hsl(231, 100%, 66%);
+}
+.vscode {
+  color: rgba(83, 94, 254, 0.578);
+  text-align: center;
+}
+#section_1 {
+  display: flex;
+  column-gap: 10px;
+}
+.Box {
+  width: 200px;
+  height: 200px;
+  background-color: hsl(105, 100%, 56%);
+  box-shadow: -10px 10px 5px hsl(105, 100%, 16%);
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: rgb(20, 88, 147);
+}
+#section_1 .circle:hover {
+  cursor: pointer;
+  box-shadow: 5px 6px 7px hsl(195, 100%, 51%);
+}
+.box {
+  width: 200px;
+  height: 200px;
+
+  border: 3px solid;
+}
+#box1 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  background-color: brown;
+  border: none;
+  margin: auto;
+  position: sticky;
+}
+.Float {
+  border: 3px solid;
+  display: flow-root;
+}
+#radiohead {
+  float: left;
+  margin-right: 10px;
+}
+#Pikachu {
+  float: right;
+  margin-left: 10px;
+}
+.Overflow {
+  margin-top: 10px;
+  border: 3px solid;
+  display: flow-root;
+  height: 50px;
+  overflow: auto;
+}
+#span {
+  margin-top: 10px;
+  background-color: aquamarine;
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: sticky;
+}
+.display {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(55, 17, 152);
+  position: sticky;
+}
+a {
+  color: black;
+}
+.a1:hover {
+  font-size: 1.1em;
+  cursor: pointer;
+  background-color: hsl(240, 70%, 50%);
+  width: 150px;
+}
+.a1:active {
+  color: orange;
+  font-size: 1.1em;
+}
+#id_1 {
+  border: 2px solid;
+  width: 130px;
+  border: none;
+}
+#id_1:hover {
+  background-color: hsl(80, 48%, 40%);
+  width: 125px;
+}
+.This_box:hover {
+  border: 2px solid rgb(99, 36, 36);
+  width: 125px;
+}
+.Hidden {
+  display: inline;
+  padding-bottom: 40px;
+}
+.Hidden .hidden_1 {
+  border: 4px solid red;
+  width: 130px;
+  height: 220px;
+
+  border: none;
+}
+.Hidden .hidden_2 {
+  background-color: antiquewhite;
+  padding: 30px;
+  display: none;
+}
+.Hidden:hover .hidden_2 {
+  display: block;
+}
+
+.Color_Change::selection {
+  color: whitesmoke;
+  background-color: greenyellow;
+}
+section #vscode_1::first-letter {
+  font-size: 2.1em;
+}
+section .vscode_2::first-line {
+  color: orange;
+  background-color: greenyellow;
+}
+.fruits .fruits_1::before {
+  content: "✔️";
+}
+.fruits #banana_fruits::after {
+  content: "🍌";
+}
+.fruits #apple_fruits::after {
+  content: "🍏";
+}
+.fruits #pineapple_fruits::after {
+  content: "🍍";
+}
+.fruits #kiwi_fruits::after {
+  content: "🥝";
+}
+.fruits .fruits_1 {
+  border: 2px solid;
+  width: 125px;
+  border: none;
+}
+.fruits .fruits_1:hover {
+  background-color: tomato;
+  width: 125px;
+}
+.class_1 #id_2 {
+  border: 3px solid;
+  width: 125px;
+  border: none;
+}
+.class_1 #id_2:hover {
+  border: none;
+  background-color: peachpuff;
+}
+.paging {
+  text-align: center;
+  transform: translateY(10px);
+}
+.paging a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 15px;
+}
+.paging a.active {
+  background-color: rgb(145, 176, 32);
+  border-radius: 5px;
+}
+.paging a:hover:not(.active) {
+  background-color: grey;
+  border-radius: 5px;
+}
+.paging a.active:hover {
+  box-shadow: 3px 3px 9px rgb(30, 29, 29);
+}
